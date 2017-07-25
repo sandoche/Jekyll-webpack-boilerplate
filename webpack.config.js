@@ -16,7 +16,12 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: './_site'
+    contentBase: [
+      './_site',
+      './_layouts',
+      './_includes',
+      './_posts'
+    ]
   },
   output: {
     filename: '[name].bundle.js',

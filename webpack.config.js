@@ -45,12 +45,6 @@ module.exports = {
         use: [
           'file-loader'
         ]
-      },
-      {
-        test: /\.(html|md|yml)$/,
-        use: [
-          'file-loader'
-        ]
       }
     ]
   }

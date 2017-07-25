@@ -17,10 +17,7 @@ module.exports = {
   ],
   devServer: {
     contentBase: [
-      './_site',
-      './_layouts',
-      './_includes',
-      './_posts'
+      './_site'
     ]
   },
   output: {
@@ -45,6 +42,12 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          'file-loader'
+        ]
+      },
+      {
+        test: /\.(html|md|yml)$/,
         use: [
           'file-loader'
         ]

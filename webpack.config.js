@@ -11,9 +11,13 @@ module.exports = {
     new CleanWebpackPlugin(['assets']),
     new HtmlWebpackPlugin({
       template: './src/template/default.html',
-      filename: '../_layouts/default.html'
+      filename: '../_layouts/default.html',
+      title: 'Dev mode'
     })
   ],
+  devServer: {
+    contentBase: './_site'
+  },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'assets'),

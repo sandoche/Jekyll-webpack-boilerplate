@@ -7,13 +7,14 @@
   "author": "Sandoche Adittane <sandoche@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "start": "concurrently \"webpack; webpack-dev-server\" \"jekyll serve\"",
+    "build": "webpack; jekyll build"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "browser-sync-webpack-plugin": "^1.2.0",
     "clean-webpack-plugin": "^0.1.16",
+    "concurrently": "^3.5.0",
     "css-loader": "^0.28.4",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.29.0",

@@ -7,8 +7,8 @@
   "author": "Sandoche Adittane <sandoche@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently \"webpack; webpack-dev-server\" \"jekyll serve\"",
-    "build": "webpack -p; JEKYLL_ENV=production jekyll build"
+    "start": "concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"jekyll serve\"",
+    "build": "webpack --env=prod --progress --profile --colors; JEKYLL_ENV=production jekyll build"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",

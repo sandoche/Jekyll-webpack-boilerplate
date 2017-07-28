@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -12,17 +13,29 @@ module.exports = {
     new CleanWebpackPlugin(['assets']),
     new HtmlWebpackPlugin({
       template: './src/template/default.html',
-      filename: '../_layouts/default.html'
+      filename: '../../_layouts/default.html'
     }),
+    new ExtractTextPlugin('style.css')
   ],
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        test: /\.(css|scss)$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'style-loader',
+            { loader: 'css-loader', options: { importLoaders: 1 } },
+            {
+              loader: 'postcss-loader',
+              options: {
+                config: {
+                  path: 'config/postcss.config.js'
+                }
+              }
+            }
+          ]
+        })
       },
       {
         test: /\.(png|svg|jpg|gif)$/,

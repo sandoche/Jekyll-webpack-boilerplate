@@ -15,7 +15,7 @@ module.exports = {
       template: './src/template/default.html',
       filename: '../../_layouts/default.html'
     }),
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('[name].css')
   ],
   module: {
     rules: [

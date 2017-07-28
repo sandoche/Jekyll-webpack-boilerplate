@@ -6,7 +6,7 @@ const webpack = require('webpack');
 module.exports = Merge(CommonConfig, {
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'assets'),
+    path: path.resolve('assets'),
     publicPath: '/assets/'
   },
   plugins: [

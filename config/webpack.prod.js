@@ -5,7 +5,7 @@ const webpack = require('webpack');
 
 module.exports = Merge(CommonConfig, {
   output: {
-    filename: '[name].[chunkhash].bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'assets'),
     publicPath: '/assets/'
   },

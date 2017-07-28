@@ -1,21 +1,26 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 module.exports = {
   entry: {
-    app: './src/index.js',
+    app: './_src/index.js',
   },
   plugins: [
-    new CleanWebpackPlugin(['assets'], { root: path.resolve(__dirname , '..'), verbose: true }),
     new HtmlWebpackPlugin({
-      template: './src/template/default.html',
+      template: './_src/template/default.html',
       filename: '../_layouts/default.html'
     }),
-    new ExtractTextPlugin('[name].css')
+    new ExtractTextPlugin('[name].css'),
+    new CopyWebpackPlugin([{
+      from: '_images/',
+      to: 'images/'
+    }]),
+    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
   ],
   module: {
     rules: [

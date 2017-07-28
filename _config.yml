@@ -37,7 +37,8 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
-  - src
+  - _src
+  - _images
   - LICENSE
   - package.json
   - README.md

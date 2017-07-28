@@ -17,7 +17,7 @@ module.exports = Merge(CommonConfig, {
         host: 'localhost',
         port: 3000,
         proxy: 'http://localhost:8080',
-        files: ["_site", "src"]
+        files: ["_site", "_src"]
       },
       {
         reload: false

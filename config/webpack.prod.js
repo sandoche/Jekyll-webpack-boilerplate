@@ -2,6 +2,7 @@ const Merge = require('webpack-merge');
 const CommonConfig = require('./webpack.common.js');
 const path = require('path');
 const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = Merge(CommonConfig, {
   output: {
@@ -10,6 +11,7 @@ module.exports = Merge(CommonConfig, {
     publicPath: '/assets/'
   },
   plugins: [
+    new CleanWebpackPlugin(['assets'], { root: path.resolve(__dirname , '..'), verbose: true }),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false

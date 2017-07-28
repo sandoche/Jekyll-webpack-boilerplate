@@ -10,7 +10,7 @@ module.exports = {
     app: './src/index.js',
   },
   plugins: [
-    new CleanWebpackPlugin(['assets']),
+    new CleanWebpackPlugin(['assets'], { root: path.resolve(__dirname , '..'), verbose: true }),
     new HtmlWebpackPlugin({
       template: './src/template/default.html',
       filename: '../../_layouts/default.html'

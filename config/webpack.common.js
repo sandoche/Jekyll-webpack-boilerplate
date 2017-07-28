@@ -13,12 +13,22 @@ module.exports = {
     new CleanWebpackPlugin(['assets'], { root: path.resolve(__dirname , '..'), verbose: true }),
     new HtmlWebpackPlugin({
       template: './src/template/default.html',
-      filename: '../../_layouts/default.html'
+      filename: '../_layouts/default.html'
     }),
     new ExtractTextPlugin('[name].css')
   ],
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env']
+          }
+        }
+      },
       {
         test: /\.(css|scss)$/,
         use: ExtractTextPlugin.extract({

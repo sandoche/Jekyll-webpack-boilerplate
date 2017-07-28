@@ -1,4 +1,5 @@
 // CSS and SASS files
 import './index.scss';
 
-console.log('hello world');
+const x = 'hello world;'
+console.log(x);

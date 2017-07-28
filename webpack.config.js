@@ -27,6 +27,9 @@ module.exports = {
         reload: false
       }
     ),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: options.devtool && (options.devtool.indexOf("sourcemap") >= 0 || options.devtool.indexOf("source-map") >= 0)
+    })
     new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {

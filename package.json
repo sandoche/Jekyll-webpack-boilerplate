@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently \"webpack; webpack-dev-server\" \"jekyll serve\"",
-    "build": "webpack; jekyll build"
+    "build": "webpack -p; JEKYLL_ENV=production jekyll build"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",

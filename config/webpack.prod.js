@@ -1,66 +1,29 @@
+const Merge = require('webpack-merge');
+const CommonConfig = require('./webpack.common.js');
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const webpack = require('webpack');
 
-module.exports = {
-  entry: {
-    app: './src/index.js',
-  },
-  devtool: 'inline-source-map',
-  plugins: [
-    new CleanWebpackPlugin(['assets']),
-    new HtmlWebpackPlugin({
-      template: './src/template/default.html',
-      filename: '../_layouts/default.html',
-      title: 'Dev mode'
-    }),
-    new BrowserSyncPlugin(
-      {
-        host: 'localhost',
-        port: 3000,
-        proxy: 'http://localhost:8080',
-        files: ["_site/*.html"]
-      },
-      {
-        reload: false
-      }
-    ),
-    new webpack.HotModuleReplacementPlugin()
-  ],
-  devServer: {
-    contentBase: [
-      './_site'
-    ],
-    hot: true
-  },
+module.exports = Merge(CommonConfig, {
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name]-[hash].bundle.js',
     path: path.resolve(__dirname, 'assets'),
     publicPath: '/assets/'
   },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      beautify: false,
+      mangle: {
+        screw_ie8: true,
+        keep_fnames: true
       },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader'
-        ]
+      compress: {
+        screw_ie8: true
       },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
-        ]
-      }
-    ]
-  }
-};
+      comments: false
+    })
+  ]
+});

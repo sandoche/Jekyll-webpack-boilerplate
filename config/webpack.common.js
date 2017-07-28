@@ -8,38 +8,13 @@ module.exports = {
   entry: {
     app: './src/index.js',
   },
-  devtool: 'inline-source-map',
   plugins: [
     new CleanWebpackPlugin(['assets']),
     new HtmlWebpackPlugin({
       template: './src/template/default.html',
-      filename: '../_layouts/default.html',
-      title: 'Dev mode'
+      filename: '../_layouts/default.html'
     }),
-    new BrowserSyncPlugin(
-      {
-        host: 'localhost',
-        port: 3000,
-        proxy: 'http://localhost:8080',
-        files: ["_site/*.html"]
-      },
-      {
-        reload: false
-      }
-    ),
-    new webpack.HotModuleReplacementPlugin()
   ],
-  devServer: {
-    contentBase: [
-      './_site'
-    ],
-    hot: true
-  },
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'assets'),
-    publicPath: '/assets/'
-  },
   module: {
     rules: [
       {

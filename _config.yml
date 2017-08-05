@@ -48,3 +48,4 @@ exclude:
   - config
   - optimization-fix
   - optimization-fix-this-file-is-ignored.js
+  - icon.png

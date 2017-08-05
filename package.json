@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"jekyll serve\"",
-    "build": "webpack --env=prod --progress --profile --colors; JEKYLL_ENV=production jekyll build"
+    "build": "webpack --env=prod --progress --profile --colors; JEKYLL_ENV=production jekyll build; webpack --env=optim  --progress --profile --colors"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -32,6 +32,7 @@
     "style-loader": "^0.18.2",
     "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "webpack-plugin-critical": "^1.0.0"
   }
 }

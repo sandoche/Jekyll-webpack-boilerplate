@@ -46,3 +46,5 @@ exclude:
   - yarn-error.log
   - yarn.lock
   - config
+  - optimization-fix
+  - optimization-fix-this-file-is-ignored.js

@@ -5,12 +5,17 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+
 
 module.exports = {
   entry: {
     app: './_src/index.js',
   },
   plugins: [
+    new FaviconsWebpackPlugin({
+      logo: './icon.png',
+    }),
     new HtmlWebpackPlugin({
       template: './_src/template/default.html',
       filename: '../_layouts/default.html'
@@ -20,7 +25,7 @@ module.exports = {
       from: '_images/',
       to: 'images/'
     }]),
-    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
+    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
   ],
   module: {
     rules: [

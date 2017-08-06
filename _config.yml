@@ -36,9 +36,10 @@ social:
     - https://plus.google.com/+BenBalter
     - https://github.com/benbalter
     - https://keybase.io/benbalter
-webmaster_verifications:
-  google:
-
+#webmaster_verifications:
+#  google: verification_code
+#google_analytics: id
+#doorbell: appKey
 
 # Build settings
 markdown: kramdown

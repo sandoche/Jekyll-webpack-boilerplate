@@ -1,0 +1,28 @@
+<script type="text/javascript">
+    window.doorbellOptions = {
+        strings: {
+            'feedback-button-text': 'Contact',
+
+            'title': 'Contact',
+            'intro-text': '', // Empty by default
+            'feedback-textarea-placeholder': 'Envoyez nous vos messages ou commentaires',
+            'email-input-placeholder': 'Votre adresse email',
+            'attach-a-screenshot': 'Ajouter une capture d\'écran',
+            'submit-button-text': 'Envoyer',
+            'add-attachments-label': '',
+
+            'message-success' : 'Message envoyé',
+            'message-error-missing-email': 'Votre adresse email est nécessaire',
+            'message-error-invalid-email': 'Adresse email invalide',
+            'message-error-missing-message': 'Votre message est nécessaire',
+            'message-error-message-too-short': 'Votre message est trop court'
+        },
+        appKey: '{{ site.doorbell }}'
+    };
+    (function(w, d, t) {
+        var hasLoaded = false;
+        function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/6760?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
+        if (w.attachEvent) { w.attachEvent('onload', l); } else if (w.addEventListener) { w.addEventListener('load', l, false); } else { l(); }
+        if (d.readyState == 'complete') { l(); }
+    }(window, document, 'script'));
+</script>

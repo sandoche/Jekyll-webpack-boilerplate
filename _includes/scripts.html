@@ -1,3 +1,7 @@
 {% if jekyll.environment == 'pwa' %}
 {% include service-worker.html %}
 {% endif %}
+
+{% if site.doorbell %}
+{% include doorbell.html %}
+{% endif %}

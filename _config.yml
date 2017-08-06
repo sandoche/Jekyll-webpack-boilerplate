@@ -37,6 +37,9 @@ social:
     - https://plus.google.com/+BenBalter
     - https://github.com/benbalter
     - https://keybase.io/benbalter
+
+languages: ["en"]
+
 #webmaster_verifications:
 #  google: verification_code
 #google_analytics: id
@@ -50,6 +53,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - octopress-minify-html
+  - jekyll-multiple-languages-plugin
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

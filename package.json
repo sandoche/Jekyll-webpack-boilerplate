@@ -9,7 +9,8 @@
   "scripts": {
     "start": "concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"jekyll serve\"",
     "build": "webpack --env=prod --progress --profile --colors; JEKYLL_ENV=production jekyll build; webpack --env=optim  --progress --profile --colors",
-    "build:pwa": "webpack --env=pwa --progress --profile --colors; JEKYLL_ENV=pwa jekyll build; webpack --env=optim  --progress --profile --colors; sw-precache --config=config/sw.config.js --verbose"
+    "build:pwa": "webpack --env=pwa --progress --profile --colors; JEKYLL_ENV=pwa jekyll build; webpack --env=optim  --progress --profile --colors; sw-precache --config=config/sw.config.js --verbose",
+    "serve:dist": "http-server _site"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

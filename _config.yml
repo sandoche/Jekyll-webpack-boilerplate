@@ -40,6 +40,7 @@ social:
 #  google: verification_code
 #google_analytics: id
 #doorbell: appKey
+#cookie_consent: true
 
 # Build settings
 markdown: kramdown

@@ -5,6 +5,10 @@
 <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
+<meta name="theme-color" content="{{ site.theme_color }}">
+<meta name="msapplication-navbutton-color" content="{{ site.theme_color }}">
+<meta name="apple-mobile-web-app-status-bar-style" content="{{ site.theme_color }}">
+
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 

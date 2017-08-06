@@ -25,6 +25,19 @@ module.exports = Merge(CommonConfig, {
     ),
     new webpack.HotModuleReplacementPlugin()
   ],
+  module: {
+    rules: [
+      {
+				test: /\.js$/,
+				enforce: "pre",
+				exclude: /node_modules/,
+        loader: "eslint-loader",
+        options: {
+          emitError: true,
+        }
+      }
+    ]
+  },
   devServer: {
     contentBase: [
       './_site'

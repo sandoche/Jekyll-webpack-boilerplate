@@ -32,9 +32,6 @@ module.exports = Merge(CommonConfig, {
 				enforce: "pre",
 				exclude: /node_modules/,
         loader: "eslint-loader",
-        options: {
-          emitError: true,
-        }
       },
       {
         test: /\.js$/,

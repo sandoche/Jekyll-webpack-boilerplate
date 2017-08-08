@@ -137,3 +137,54 @@ a {
     padding: 0 $container-padding;
   }
 }
+
+.blog {
+  @include container($container-padding);
+  margin-top: 60px;
+
+
+  &__post {
+
+    padding: 0 $container-padding;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid lighten($link-color, 40%);
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+
+    &:first-child {
+      padding-top: 10px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__date {
+    padding-top: 15px;
+    width: 50%;
+    color: $link-color;
+  }
+
+
+  &__link {
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  &__title {
+    color: $text-color;
+    font-size: $font-md;
+    padding-top: 0;
+  }
+
+  &__excerpt {
+    color: $link-color;
+  }
+}

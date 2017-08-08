@@ -1,5 +1,5 @@
 headline: Your beautiful headline
 
 call_to_action:
-  - title: Check out our blog
-    link: /blog
+  title: Check out our blog
+  link: /blog

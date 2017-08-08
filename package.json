@@ -43,5 +43,8 @@
     "webpack-merge": "^4.1.0",
     "webpack-plugin-critical": "^1.0.0",
     "webpack-pwa-manifest": "^3.1.6"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
   }
 }

@@ -1,0 +1,80 @@
+// Variables
+
+$container-width: 1200px;
+
+$primary-color: #967ADC;
+$text-color: #333;
+$link-color: #7F7F7F;
+
+$font-xl: 32px;
+$font-md: 22px;
+$font-sm: 18px;
+$font-xs: 16px;
+
+
+// Global
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: $text-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  font-size: $font-sm;
+
+  &:hover {
+    color: darken($link-color, 40%);
+  }
+}
+
+
+// Components & pages
+
+.navigation {
+
+  display: flex;
+  flex-direction: row;
+  max-width: $container-width;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+
+  &__branding {
+      display: flex;
+      align-items: center;
+
+  }
+
+  &__title {
+    color: $text-color !important;
+    font-size: $font-md;
+    font-weight: 500;
+  }
+
+  &__logo {
+    margin-right: 10px;
+  }
+
+  &__logo-img {
+    height: 30px;
+    width: 30px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__link {
+    margin-left: 30px;
+    font-size: $font-xs;
+  }
+
+}
+
+.home {
+
+}

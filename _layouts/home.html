@@ -3,6 +3,8 @@ layout: default
 ---
 
 <div class="home">
-  <h1 class="home__headline">{% t headline %}</h1>
-  <a class="button" href="{% t call_to_action.link %}">{% t call_to_action.title %}</a>
+  <div class="home__headline-container">
+    <h1 class="home__headline">{% t headline %}</h1>
+    <a class="button home__cta" href="{% t call_to_action.link %}">{% t call_to_action.title %}</a>
+  </div>
 </div>

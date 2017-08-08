@@ -1,12 +1,13 @@
 // Variables
 
 $container-width: 1200px;
+$container-padding: 30px;
 
 $primary-color: #967ADC;
 $text-color: #333;
 $link-color: #7F7F7F;
 
-$font-xl: 32px;
+$font-xl: 58px;
 $font-md: 22px;
 $font-sm: 18px;
 $font-xs: 16px;
@@ -29,6 +30,12 @@ a {
   }
 }
 
+// Shared
+
+.button {
+
+}
+
 
 // Components & pages
 
@@ -36,11 +43,17 @@ a {
 
   display: flex;
   flex-direction: row;
-  max-width: $container-width;
-  margin: auto;
   justify-content: space-between;
   align-items: center;
+
+  max-width: $container-width;
+  padding: 0 $container-padding;
+  margin: auto;
+
   margin-top: 10px;
+
+  padding-bottom: 10px;
+  border-bottom: 1px solid lighten($link-color, 40%);
 
   &__branding {
       display: flex;
@@ -76,5 +89,21 @@ a {
 }
 
 .home {
+
+  max-width: $container-width;
+  margin: auto;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 $container-padding;
+
+  &__headline-container {
+    padding: 0 $container-padding * 3;
+  }
+
+  &__headline {
+    font-size: $font-xl;
+  }
 
 }

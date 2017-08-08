@@ -3,7 +3,7 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 
 ## To do
 - [x] Create the home layout
-- [ ] Write sass
+- [x] Write sass
 - [ ] Check for markdown
 - [ ] Create the blog layout
 - [ ] Create the page layout

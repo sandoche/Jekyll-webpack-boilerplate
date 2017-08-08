@@ -12,6 +12,14 @@ $font-md: 22px;
 $font-sm: 18px;
 $font-xs: 16px;
 
+// Abstract class
+
+%container {
+  max-width: $container-width;
+  padding: 0 $container-padding;
+  margin: auto;
+}
+
 
 // Global
 
@@ -49,14 +57,12 @@ a {
 
 .navigation {
 
+  @extend %container;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  max-width: $container-width;
-  padding: 0 $container-padding;
-  margin: auto;
 
   margin-top: 10px;
 
@@ -66,7 +72,6 @@ a {
   &__branding {
       display: flex;
       align-items: center;
-
   }
 
   &__title {
@@ -98,13 +103,13 @@ a {
 
 .home {
 
-  max-width: $container-width;
-  margin: auto;
+  @extend %container;
+
   height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 $container-padding;
+
 
   &__headline-container {
     padding: 0 $container-padding * 3;
@@ -114,4 +119,23 @@ a {
     font-size: $font-xl;
   }
 
+}
+
+
+.page {
+
+  @extend %container;
+  margin-top: 60px;
+
+  &__header {
+
+  }
+
+  &__title {
+
+  }
+
+  &__content {
+
+  }
 }

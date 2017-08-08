@@ -12,13 +12,14 @@ $font-md: 22px;
 $font-sm: 18px;
 $font-xs: 16px;
 
-// Abstract class
+// Mixin
 
-%container {
+@mixin container($padding) {
   max-width: $container-width;
-  padding: 0 $container-padding;
+  padding: 0 $padding;
   margin: auto;
 }
+
 
 
 // Global
@@ -57,7 +58,7 @@ a {
 
 .navigation {
 
-  @extend %container;
+  @include container($container-padding);
 
   display: flex;
   flex-direction: row;
@@ -103,7 +104,7 @@ a {
 
 .home {
 
-  @extend %container;
+  @include container($container-padding);
 
   height: 65vh;
   display: flex;
@@ -124,18 +125,15 @@ a {
 
 .page {
 
-  @extend %container;
+  @include container($container-padding);
   margin-top: 60px;
 
   &__header {
-
+    padding: 0 $container-padding;
   }
 
-  &__title {
-
-  }
 
   &__content {
-
+    padding: 0 $container-padding;
   }
 }

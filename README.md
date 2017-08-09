@@ -20,9 +20,12 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [ ] Try Style lint postcss
 - [ ] Check for SASS map
 
+- [ ] Delete assets & site ? 
+
 - [ ] Update logo & icon
 - [ ] Test to add images in the pages to check the whole boilerplate
 - [ ] Fix double image bug
+
 
 - [ ] Write default data
 - [ ] Try AMP

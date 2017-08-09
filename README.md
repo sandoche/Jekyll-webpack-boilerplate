@@ -11,11 +11,10 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [x] Check for markdown
 - [x] See for page and post translations
 - [x] Check with the blog post what is missing
-
 - [x] Use path resolve in the webpack config
 - [x] Remove images compression from dev webpack
+- [x] Try to put CSS & JS Hash for prod --> JS with hash but not css because of the optim
 
-- [ ] Try to put CSS & JS Hash for prod
 - [ ] Fix CSS minification and map for debug in dev
 - [ ] Check JS minification babel minify
 

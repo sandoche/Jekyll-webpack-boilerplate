@@ -1,8 +1,8 @@
-module.exports = {
+module.exports = ({ file, options, env }) => ({
   parser: 'postcss-scss',
   plugins: {
     'postcss-import': {},
     'autoprefixer': {},
-    'cssnano': {}
+    'cssnano': env === 'production' ? {} : false
   }
-}
+})

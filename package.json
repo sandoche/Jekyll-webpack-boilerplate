@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"jekyll serve\"",
-    "build": "webpack --env=prod --progress --profile --colors; JEKYLL_ENV=production jekyll build; webpack --env=optim  --progress --profile --colors",
-    "build:pwa": "webpack --env=pwa --progress --profile --colors; JEKYLL_ENV=pwa jekyll build; webpack --env=optim  --progress --profile --colors; sw-precache --config=config/sw.config.js --verbose",
+    "build": "cross-env NODE_ENV=production webpack --env=prod --progress --profile --colors; JEKYLL_ENV=production jekyll build; webpack --env=optim  --progress --profile --colors",
+    "build:pwa": "cross-env NODE_ENV=production webpack --env=pwa --progress --profile --colors; JEKYLL_ENV=pwa jekyll build; webpack --env=optim  --progress --profile --colors; sw-precache --config=config/sw.config.js --verbose",
     "serve:dist": "http-server _site"
   },
   "devDependencies": {
@@ -21,6 +21,7 @@
     "clean-webpack-plugin": "^0.1.16",
     "concurrently": "^3.5.0",
     "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.0.5",
     "css-loader": "^0.28.4",
     "eslint": "^4.4.0",
     "eslint-config-airbnb-base": "^11.3.1",

@@ -208,3 +208,16 @@ a {
   }
 
 }
+
+
+.footer {
+  border-top: 1px solid lighten($link-color, 40%);
+  padding-top: 30px;
+  margin-top: 80px;
+
+  &__container {
+    @include container($container-padding);
+    color: $link-color;
+  }
+
+}

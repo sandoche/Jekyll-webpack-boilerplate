@@ -30,6 +30,7 @@
     "favicons-webpack-plugin": "^0.0.7",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.29.0",
+    "http-server": "^0.10.0",
     "imagemin-webpack-plugin": "^1.5.0-beta.0",
     "node-sass": "^4.5.3",
     "postcss-import": "^10.0.0",

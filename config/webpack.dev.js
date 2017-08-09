@@ -47,7 +47,7 @@ module.exports = Merge(CommonConfig, {
   },
   devServer: {
     contentBase: [
-      './_site'
+      path.resolve('_site'),
     ],
     hot: true
   }

@@ -12,7 +12,7 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [x] See for page and post translations
 - [x] Check with the blog post what is missing
 
-- [ ] Use path resolve in the webpack config
+- [x] Use path resolve in the webpack config
 - [ ] Remove images from dev webpack
 - [ ] Try to put CSS & JS Hash for prod
 - [ ] Fix CSS minification and map for debug in dev
@@ -31,6 +31,7 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [ ] Write documentation
 
 - [ ] Try the boilerplate with a real project (snitco compare after before with Lighthouse)
+- [ ] Check manifest and PWA
 
 - [ ] Write the article
 - [ ] Try to fix in windows

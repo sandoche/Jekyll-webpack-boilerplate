@@ -22,7 +22,7 @@ module.exports = {
     }),
     new ExtractTextPlugin('[name].css'),
     new CopyWebpackPlugin([{
-      from: '_images/',
+      from: path.resolve('_images'),
       to: 'images/'
     }]),
     new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),

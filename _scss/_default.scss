@@ -27,6 +27,14 @@ $font-xs: 16px;
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: $text-color;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
 }
 
 a {
@@ -216,7 +224,7 @@ a {
 
 .footer {
   border-top: 1px solid lighten($link-color, 40%);
-  padding-top: 30px;
+  padding: 30px 0;
   margin-top: 80px;
 
   &__container {

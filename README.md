@@ -7,7 +7,7 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [x] Create the page layout
 - [x] Create the blog layout
 - [x] Create the post layout
-- [ ] Create footer
+- [x] Create footer
 - [ ] Check for markdown
 - [ ] See for page and post translations
 - [ ] Check with the blog post what is missing

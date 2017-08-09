@@ -15,21 +15,16 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [x] Remove images compression from dev webpack
 - [x] Try to put CSS & JS Hash for prod --> JS with hash but not css because of the optim
 - [x] Fix CSS minification
-
-- [ ] Try precss, or node-sass
-- [ ] Try Style lint postcss
-- [ ] Check for SASS map
-
-- [ ] Delete assets & site ? 
-
-- [ ] Update logo & icon
-- [ ] Test to add images in the pages to check the whole boilerplate
-- [ ] Fix double image bug
-
+- [x] Try precss, or node-sass --> Didn't work
+- [x] Check for SASS map --> couldn't make it work
+- [x] Delete assets & site
 
 - [ ] Write default data
-- [ ] Try AMP
+- [ ] Test to add images in the pages to check the whole boilerplate
+- [ ] Fix double image bug
+- [ ] Update logo & icon
 
+- [ ] Try AMP
 - [ ] Write documentation
 
 - [ ] Try the boilerplate with a real project (snitco compare after before with Lighthouse)

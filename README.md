@@ -20,7 +20,7 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [x] Delete assets & site
 - [x] Write default data
 - [x] Test to add images in the pages to check the whole boilerplate
-- [ ] Update logo & icon
+- [x] Update logo & icon
 - [ ] Try AMP
 - [ ] Write documentation
 - [ ] Try the boilerplate with a real project (snitco compare after before with Lighthouse)

@@ -10,6 +10,7 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [x] Create footer
 - [x] Check for markdown
 - [x] See for page and post translations
+- [ ] Check with the blog post what is missing
 - [ ] Use path resolve in the webpack config
 - [ ] Try to put CSS & JS Hash for prod
 - [ ] Fix CSS minification and map for debug in dev
@@ -17,7 +18,6 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [ ] Remove images from dev webpack
 - [ ] Test to add images in the pages to check the whole boilerplate
 - [ ] Fix double image bug
-- [ ] Check with the blog post what is missing
 - [ ] Update logo & icon
 - [ ] Write default data
 - [ ] Write documentation

@@ -7,9 +7,9 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 module.exports = Merge(ProdConfig, {
   plugins: [
     new WebpackPwaManifest({
-      name: 'My Progressive Web App',
-      short_name: 'MyPWA',
-      description: 'My awesome Progressive Web App!',
+      name: 'Super-website',
+      short_name: 'Super PWA',
+      description: 'A super website made with love',
       orientation: "portrait",
       display: "standalone",
       start_url: ".",

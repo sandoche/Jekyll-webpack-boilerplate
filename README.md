@@ -18,8 +18,8 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [x] Try precss, or node-sass --> Didn't work
 - [x] Check for SASS map --> couldn't make it work
 - [x] Delete assets & site
+- [x] Write default data
 
-- [ ] Write default data
 - [ ] Test to add images in the pages to check the whole boilerplate
 - [ ] Fix double image bug
 - [ ] Update logo & icon

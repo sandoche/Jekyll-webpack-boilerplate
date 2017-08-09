@@ -180,8 +180,12 @@ a {
 
   &__date {
     padding-top: 15px;
-    width: 50%;
+    width: 30%;
     color: $link-color;
+  }
+
+  &__content {
+    width: 100%;
   }
 
 

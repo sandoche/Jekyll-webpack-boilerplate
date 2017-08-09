@@ -4,7 +4,6 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 
@@ -24,8 +23,7 @@ module.exports = {
     new CopyWebpackPlugin([{
       from: path.resolve('_images'),
       to: 'images/'
-    }]),
-    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
+    }])
   ],
   module: {
     rules: [

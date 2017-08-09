@@ -3,6 +3,7 @@ const CommonConfig = require('./webpack.common.js');
 const path = require('path');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 module.exports = Merge(CommonConfig, {
   output: {
@@ -26,6 +27,7 @@ module.exports = Merge(CommonConfig, {
         screw_ie8: true
       },
       comments: false
-    })
+    }),
+    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
   ]
 });

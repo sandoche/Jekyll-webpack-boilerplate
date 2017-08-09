@@ -13,7 +13,8 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [x] Check with the blog post what is missing
 
 - [x] Use path resolve in the webpack config
-- [ ] Remove images from dev webpack
+- [x] Remove images compression from dev webpack
+
 - [ ] Try to put CSS & JS Hash for prod
 - [ ] Fix CSS minification and map for debug in dev
 - [ ] Check JS minification babel minify

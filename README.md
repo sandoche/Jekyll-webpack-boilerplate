@@ -14,7 +14,7 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [x] Use path resolve in the webpack config
 - [x] Remove images compression from dev webpack
 - [x] Try to put CSS & JS Hash for prod --> JS with hash but not css because of the optim
-- [ ] Fix CSS minification
+- [x] Fix CSS minification
 
 - [ ] Try precss, or node-sass
 - [ ] Try Style lint postcss

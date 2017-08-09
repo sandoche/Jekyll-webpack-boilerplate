@@ -25,6 +25,7 @@ social:
     - https://github.com/sandoche
 
 languages: ["en"]
+ampdir: amp
 
 ### Google webmaster tools, Google Analytics, Doorbell and Cookie consent uncomment and put the API key
 #webmaster_verifications:
@@ -41,6 +42,7 @@ plugins:
   - jekyll-seo-tag
   - octopress-minify-html
   - jekyll-multiple-languages-plugin
+  - amp-jekyll
 
 ### Exclude from processing.
 exclude:

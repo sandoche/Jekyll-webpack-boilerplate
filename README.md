@@ -19,17 +19,13 @@ A boilerplate with Jekyll and Webpack to make the most performant static website
 - [x] Check for SASS map --> couldn't make it work
 - [x] Delete assets & site
 - [x] Write default data
-
-- [ ] Test to add images in the pages to check the whole boilerplate
-- [ ] Fix double image bug
+- [x] Test to add images in the pages to check the whole boilerplate
 - [ ] Update logo & icon
-
 - [ ] Try AMP
 - [ ] Write documentation
-
 - [ ] Try the boilerplate with a real project (snitco compare after before with Lighthouse)
 - [ ] Check manifest and PWA
-
-- [ ] Write the article
+- [ ] Write the article draft
 - [ ] Try to fix in windows
 - [ ] Try to build Guetzli
+- [ ] Finish the article

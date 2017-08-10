@@ -1,5 +1,31 @@
 # Jekyll-webpack-boilerplate
-A boilerplate with Jekyll and Webpack to make the most performant static websites
+A Jekyll boilerplate supercharged with Webpack to build modern performant websites (including Progressive Web Apps).
+
+## Features
+
+## Quick start
+
+## Development
+
+### Folder structure
+
+### Configurations
+
+### Assets
+
+### Internationalization
+
+## Build
+
+### Optimized website
+
+### PWA
+
+## Other documentations
+
+## Donation
+xxx
+
 
 ## To do
 - [x] Create the home layout

@@ -1,4 +1,4 @@
-<img src="https://github.com/sandoche/Jekyll-webpack-boilerplate/blob/master/icon.png?raw=true" style="width:200px;"/>
+![](https://github.com/sandoche/Jekyll-webpack-boilerplate/blob/master/icon.png?raw=true =200x200)
 
 # Jekyll-webpack-boilerplate
 A Jekyll boilerplate supercharged with Webpack to build modern performant websites (including Progressive Web Apps).

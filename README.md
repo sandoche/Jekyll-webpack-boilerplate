@@ -1,15 +1,60 @@
+<img src="https://github.com/sandoche/Jekyll-webpack-boilerplate/blob/master/icon.png?raw=true" style="width:200px;"/>
+
 # Jekyll-webpack-boilerplate
 A Jekyll boilerplate supercharged with Webpack to build modern performant websites (including Progressive Web Apps).
+Read more about how this boilerplate has been built: https://medium.com/learning-lab
 
 ## Features
 
+### Improved workflow
+* Webpack working along with Jekyll
+* BrowserSync live reload
+
+### Optimized Style and SASS
+* SASS Style
+* PostCSS Auto Preffixer
+* CSS minified
+* Critical CSS Path added to the main template
+
+### ES6 & Optimization
+* ES6 Babel
+* JS minified and uglified
+* ES Lint
+
+### Images optimized
+* Imagemin, images optimizations
+
+### Write less code
+* Theme color in config
+* Favicon generated automatically
+* Google Analytics setup in config file (optional)
+* Doorbell setup in config file (optional)
+* Cookie consent setup in config file (optional)
+
+### SEO Ready
+* SEO Plugin Jekyll
+* Sitemap generated
+* Accelerated Mobile Pages enabled for Posts
+
+### Write better code
+* Internationalization plugin
+
+### Progressive Web Apps (optional)
+* Generation of the Manifest
+* Generation of Service worker
+
 ## Quick start
+1. Clone this repo using `git clone https://github.com/sandoche/Jekyll-webpack-boilerplate.git`
+2. Move to the appropriate directory: `cd Jekyll-webpack-boilerplate`.
+3. Run `npm install` or `yarn install` in order to install dependencies and clean the git repo.
+4. Run `npm start` or `yarn start`  to start the development server.
 
 ## Development
 
 ### Folder structure
 
 ### Configurations
+// amp & templates
 
 ### Assets
 

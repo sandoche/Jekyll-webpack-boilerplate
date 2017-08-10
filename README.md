@@ -1,6 +1,10 @@
-![](https://github.com/sandoche/Jekyll-webpack-boilerplate/blob/master/icon.png?raw=true =200x200)
+<p align="center">
+  <img src="https://github.com/sandoche/Jekyll-webpack-boilerplate/blob/master/icon.png?raw=true" width="350"/>
+</p>
+<h1 align="center">
+  Jekyll-webpack-boilerplate
+</h1>
 
-# Jekyll-webpack-boilerplate
 A Jekyll boilerplate supercharged with Webpack to build modern performant websites (including Progressive Web Apps).
 Read more about how this boilerplate has been built: https://medium.com/learning-lab
 

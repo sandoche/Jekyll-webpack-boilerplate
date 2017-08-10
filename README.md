@@ -122,6 +122,8 @@ You can see above the basic structure of the boilerplate and the main difference
 
 ## Build
 
+If you don't user `yarn` replace it by `npm run` in the following commands.
+
 ### Optimized website
 To build the website run the following line
 
@@ -142,16 +144,22 @@ The built website will be in `_site` folder.
 yarn build:pwa
 ```
 
+### Clean cache
+This will remove the generated folders
+```
+yarn remove:cache
+```
+
 ## Other documentations
 * [Jekyll](https://jekyllrb.com/)
 * [Webpack](https://webpack.js.org/)
 * [Jekyll multiple languages plugin](https://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin)
 * [Jekyll SEO tag](https://github.com/jekyll/jekyll-seo-tag)
 * [BrowserSync Webpack plugin](https://www.npmjs.com/package/browser-sync-webpack-plugin)
+* [PostCSS](http://postcss.org/)
 
 ## Buy me a beer
 If you like this project [Buy me a beer](https://paypal.me/kanbanote)
-
 
 ## To do
 - [x] Create the home layout

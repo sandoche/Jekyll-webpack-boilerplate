@@ -54,28 +54,103 @@ Read more about how this boilerplate has been built: https://medium.com/learning
 4. Run `yarn start` or `npm start`  to start the development server.
 
 ## Development
-
-
+To start the development server just run  `yarn start` or `npm start`
 
 ### Folder structure
+```
+.
+├── 404.html
+├── about.md
+├── blog.md
+├── config <--- This folder contains the different Webpack config files
+│   ├── optimization-fix <--- A fix for optimization, do not delete this folder
+│   ├── postcss.config.js <--- Post css config
+│   ├── sw.config.js <--- The service worker config file
+│   ├── webpack.common.js <--- The common Webpack config file for all the environment
+│   ├── webpack.dev.js <--- Dev Webpack environment config file
+│   ├── webpack.optim.js <--- This is used to add the css critical path in the default template
+│   ├── webpack.prod.js <--- Prod Webpack environment config file
+│   └── webpack.pwa.js <--- Please edit this file if you want a PWA
+├── _config.yml <--- The Jekyll config file that you need to set up
+├── Gemfile
+├── Gemfile.lock
+├── _i18n <--- Contains your posts and data in the language you need (check below how to remove it)
+├── _images <--- Put all your images here, you will access them with this path /assets/images/
+│   ├── icon.png <--- Replace this with your icon
+│   └── large-icon.png <--- Replace this with your Facebook Open Graph picture
+├── icon.png <--- Same with this one
+├── _includes
+├── index.md
+├── _layouts
+│   ├── amp.html <--- The layout for Accelerated mobile page
+│   ├── blog.html
+│   ├── home.html
+│   ├── page.html
+│   └── post.html
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── README.md
+├── _scss <--- Put your partials here
+│   └── _default.scss
+├── _src <--- This folder contains your JS and SASS entry points
+│   ├── index.js
+│   ├── index.scss
+│   └── template
+│       └── default.html <--- Here is the main default template, feel free to edit it but do not delete it
+├── webpack.config.js
+├── yarn-error.log
+└── yarn.lock
+```
+You can see above the basic structure of the boilerplate and the main differences with the official Jekyll folder structure
 
 ### Configurations
-// amp & templates
+* The required configurations are all in `_config.yml`
+* If you want a `manifest.json` file please edit `config/webpack.pwa.js`
+* Replace the different icon by yours in `_images` and in the root folder
 
 ### Assets
+* SCSS partials should be located in `_scss` for better reading
+* Put all your images in `_images` the content of this folder will be moved to the `_site/assets/images` so you can access them with this path `/assets/images/**` in your templates, check the examples
+* Put all your Javascript files inside `_src` and import them from `index.js` or you can also add them as a new entry point in your webpack configuration file
 
 ### Internationalization
+* All the posts should be there in inside `_i18n` folder inside its language, check the boilerplate examples
+* You can put your variables inside `_i18n/en.yml` (replace en with your language) and call them in your template with `{% t variable_name.sub_variable %}`
+* You can remove the plugin by removing `gem 'jekyll-multiple-languages-plugin'` from `gemfile` and `jekyll-multiple-languages-plugin` from `plugins` in `_config.yml`
+* We invite you to read the very good [official documentation](https://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin) of the plugin Jekyll multiple language plugin
 
 ## Build
 
 ### Optimized website
+To build the website run the following line
+
+```
+yarn build
+```
+The built website will be in `_site` folder.
+
+You can also run a local server to test it with this command
+```
+yarn serve:dist
+```
 
 ### PWA
+If you want to build a PWA (including the manifest.json and the service worker) run the following. Please ensure to have configured this file `config/webpack.pwa.js`
+The built website will be in `_site` folder.
+```
+yarn build:pwa
+```
 
 ## Other documentations
+* [Jekyll](https://jekyllrb.com/)
+* [Webpack](https://webpack.js.org/)
+* [Jekyll multiple languages plugin](https://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin)
+* [Jekyll SEO tag](https://github.com/jekyll/jekyll-seo-tag)
+* [BrowserSync Webpack plugin](https://www.npmjs.com/package/browser-sync-webpack-plugin)
 
-## Donation
-xxx
+## Buy me a beer
+If you like this project [Buy me a beer](https://paypal.me/kanbanote)
 
 
 ## To do
@@ -100,8 +175,9 @@ xxx
 - [x] Update logo & icon
 - [x] Try AMP
 - [x] Design template
-- [ ] Write documentation
+- [x] Write documentation
 - [ ] Try the boilerplate with a real project (snitco compare after before with Lighthouse)
+- [ ] Try subfolders for images
 - [ ] Check manifest and PWA
 - [ ] Write the article draft
 - [ ] Try to fix in windows

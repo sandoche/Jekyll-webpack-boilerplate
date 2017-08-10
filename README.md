@@ -46,10 +46,12 @@ Read more about how this boilerplate has been built: https://medium.com/learning
 ## Quick start
 1. Clone this repo using `git clone https://github.com/sandoche/Jekyll-webpack-boilerplate.git`
 2. Move to the appropriate directory: `cd Jekyll-webpack-boilerplate`.
-3. Run `npm install` or `yarn install` in order to install dependencies and clean the git repo.
-4. Run `npm start` or `yarn start`  to start the development server.
+3. Run `yarn install` or `npm install` in order to install dependencies and clean the git repo.
+4. Run `yarn start` or `npm start`  to start the development server.
 
 ## Development
+
+
 
 ### Folder structure
 

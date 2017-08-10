@@ -6,40 +6,40 @@ Read more about how this boilerplate has been built: https://medium.com/learning
 
 ## Features
 
-### Improved workflow
+**Improved workflow**
 * Webpack working along with Jekyll
 * BrowserSync live reload
 
-### Optimized Style and SASS
+**Optimized Style and SASS**
 * SASS Style
 * PostCSS Auto Preffixer
 * CSS minified
 * Critical CSS Path added to the main template
 
-### ES6 & Optimization
+**ES6 & Optimization**
 * ES6 Babel
 * JS minified and uglified
 * ES Lint
 
-### Images optimized
+**Images optimized**
 * Imagemin, images optimizations
 
-### Write less code
+**Write less code**
 * Theme color in config
 * Favicon generated automatically
 * Google Analytics setup in config file (optional)
 * Doorbell setup in config file (optional)
 * Cookie consent setup in config file (optional)
 
-### SEO Ready
+**SEO Ready**
 * SEO Plugin Jekyll
 * Sitemap generated
 * Accelerated Mobile Pages enabled for Posts
 
-### Write better code
+**Write better code**
 * Internationalization plugin
 
-### Progressive Web Apps (optional)
+**Progressive Web Apps (optional)**
 * Generation of the Manifest
 * Generation of Service worker
 

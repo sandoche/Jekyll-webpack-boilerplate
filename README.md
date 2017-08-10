@@ -114,7 +114,7 @@ You can see above the basic structure of the boilerplate and the main difference
 * Put all your images in `_images` the content of this folder will be moved to the `_site/assets/images` so you can access them with this path `/assets/images/**` in your templates, check the examples
 * Put all your Javascript files inside `_src` and import them from `index.js` or you can also add them as a new entry point in your webpack configuration file
 
-### Internationalization
+### Internationalization
 * All the posts should be there in inside `_i18n` folder inside its language, check the boilerplate examples
 * You can put your variables inside `_i18n/en.yml` (replace en with your language) and call them in your template with `{% t variable_name.sub_variable %}`
 * You can remove the plugin by removing `gem 'jekyll-multiple-languages-plugin'` from `gemfile` and `jekyll-multiple-languages-plugin` from `plugins` in `_config.yml`

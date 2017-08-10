@@ -192,4 +192,4 @@ If you like this project [Buy me a beer](https://paypal.me/kanbanote)
 - [ ] Try to build Guetzli
 - [ ] Finish the article
 - [ ] Fix the empty remove ([ -e file ] && rm file)
-- [ ] 
+- [ ] Doorbell script to update because it's in French

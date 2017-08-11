@@ -1,21 +1,21 @@
 <script type="text/javascript">
     window.doorbellOptions = {
         strings: {
-            'feedback-button-text': 'Contact',
+          'title': 'Feedback',
+          'intro-text': '', // Empty by default
+          'feedback-textarea-placeholder': 'Send us your comments or suggestions...',
+          'feedback-label': '(empty)',
+          'email-input-placeholder': 'Your email address',
+          'email-label': '(empty)',
+          'attach-a-screenshot': 'Attach a screenshot',
+          'submit-button-text': 'Send',
+          'add-attachments-label': '',
 
-            'title': 'Contact',
-            'intro-text': '', // Empty by default
-            'feedback-textarea-placeholder': 'Envoyez nous vos messages ou commentaires',
-            'email-input-placeholder': 'Votre adresse email',
-            'attach-a-screenshot': 'Ajouter une capture d\'écran',
-            'submit-button-text': 'Envoyer',
-            'add-attachments-label': '',
-
-            'message-success' : 'Message envoyé',
-            'message-error-missing-email': 'Votre adresse email est nécessaire',
-            'message-error-invalid-email': 'Adresse email invalide',
-            'message-error-missing-message': 'Votre message est nécessaire',
-            'message-error-message-too-short': 'Votre message est trop court'
+          'message-success' : 'Feedback sent!',
+          'message-error-missing-email': 'Your email address is required',
+          'message-error-invalid-email': 'Invalid email address',
+          'message-error-missing-message': 'Your message is required',
+          'message-error-message-too-short': 'Your message is too short'
         },
         appKey: '{{ site.doorbell }}'
     };

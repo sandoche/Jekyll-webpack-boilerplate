@@ -185,11 +185,11 @@ If you like this project [Buy me a beer](https://paypal.me/kanbanote)
 - [x] Design template
 - [x] Write documentation
 - [ ] Try the boilerplate with a real project (snitco compare after before with Lighthouse)
-- [ ] Try subfolders for images
+- [x] Try subfolders for images
 - [ ] Check manifest and PWA
 - [ ] Write the article draft
 - [ ] Try to fix in windows
 - [ ] Try to build Guetzli
 - [ ] Finish the article
 - [ ] Fix the empty remove ([ -e file ] && rm file)
-- [ ] Doorbell script to update because it's in French
+- [x] Doorbell script to update because it's in French

@@ -186,10 +186,10 @@ If you like this project [Buy me a beer](https://paypal.me/kanbanote)
 - [x] Write documentation
 - [x] Try subfolders for images
 - [x] Doorbell script to update because it's in French
+- [x] Fix the empty remove
 - [ ] Try the boilerplate with a real project (snitco compare after before with Lighthouse)
 - [ ] Check manifest and PWA
 - [ ] Write the article draft
 - [ ] Try to fix in windows
 - [ ] Try to build Guetzli
 - [ ] Finish the article
-- [x] Fix the empty remove

@@ -144,10 +144,10 @@ The built website will be in `_site` folder.
 yarn build:pwa
 ```
 
-### Clean cache
+### Clean assets & \_site folders
 This will remove the generated folders
 ```
-yarn remove:cache
+yarn clean:project
 ```
 
 ## Other documentations
@@ -184,12 +184,12 @@ If you like this project [Buy me a beer](https://paypal.me/kanbanote)
 - [x] Try AMP
 - [x] Design template
 - [x] Write documentation
-- [ ] Try the boilerplate with a real project (snitco compare after before with Lighthouse)
 - [x] Try subfolders for images
+- [x] Doorbell script to update because it's in French
+- [ ] Try the boilerplate with a real project (snitco compare after before with Lighthouse)
 - [ ] Check manifest and PWA
 - [ ] Write the article draft
 - [ ] Try to fix in windows
 - [ ] Try to build Guetzli
 - [ ] Finish the article
-- [ ] Fix the empty remove ([ -e file ] && rm file)
-- [x] Doorbell script to update because it's in French
+- [x] Fix the empty remove

@@ -7,11 +7,11 @@
   "author": "Sandoche Adittane <sandoche@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "npm run-script remove:cache; concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"jekyll serve\"",
+    "start": "npm run-script clean:project; concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"jekyll serve\"",
     "build": "cross-env NODE_ENV=production webpack --env=prod --progress --profile --colors; JEKYLL_ENV=production jekyll build; webpack --env=optim  --progress --profile --colors",
     "build:pwa": "cross-env NODE_ENV=production webpack --env=pwa --progress --profile --colors; JEKYLL_ENV=pwa jekyll build; webpack --env=optim  --progress --profile --colors; sw-precache --config=config/sw.config.js --verbose",
     "serve:dist": "http-server _site",
-    "remove:cache": "rm -R _site; rm -R assets"
+    "clean:project": "if [ -e _site ]; then rm -R _site; fi; if [ -e assets ]; then rm -R assets; fi"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

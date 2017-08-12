@@ -88,8 +88,7 @@ To start the development server just run  `yarn start` or `npm start`
 │   ├── page.html
 │   └── post.html
 ├── LICENSE
-├── package.json
-├── package-lock.json
+├── package.json <--- Update this file with your information especially the name which is used for the meta tags
 ├── README.md
 ├── _scss <--- Put your partials here
 │   └── _default.scss
@@ -106,6 +105,7 @@ You can see above the basic structure of the boilerplate and the main difference
 
 ### Configurations
 * The required configurations are all in `_config.yml`
+* Also edit `package.json` the name is used in the meta tags
 * If you want a `manifest.json` file please edit `config/webpack.pwa.js`
 * Replace the different icon by yours in `_images` and in the root folder
 
@@ -187,11 +187,10 @@ If you like this project [Buy me a beer](https://paypal.me/kanbanote)
 - [x] Try subfolders for images
 - [x] Doorbell script to update because it's in French
 - [x] Fix the empty remove
-- [ ] Try the boilerplate with a real project (snitco compare after before with Lighthouse)
-- [ ] Change doc and file to have a single logo to load for everywhere
-- [ ] Check manifest and PWA
-- [ ] Write the article draft
+- [x] Tell in documentation to change package.json or check how to change it in the favicon plugin
+- [x] Try the boilerplate with a real project (snitco compare after before with Lighthouse)
+- [x] Check manifest and PWA
+- [x] Write the article draft
 - [ ] Try to fix in windows
 - [ ] Try to build Guetzli
 - [ ] Finish the article
-- [ ] Tell in documentation to change package.json or check how to change it in the favicon plugin

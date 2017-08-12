@@ -188,6 +188,7 @@ If you like this project [Buy me a beer](https://paypal.me/kanbanote)
 - [x] Doorbell script to update because it's in French
 - [x] Fix the empty remove
 - [ ] Try the boilerplate with a real project (snitco compare after before with Lighthouse)
+- [ ] Change doc and file to have a single logo to load for everywhere
 - [ ] Check manifest and PWA
 - [ ] Write the article draft
 - [ ] Try to fix in windows

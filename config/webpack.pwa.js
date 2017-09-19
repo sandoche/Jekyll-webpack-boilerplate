@@ -12,8 +12,9 @@ module.exports = Merge(ProdConfig, {
       description: 'A super website made with love',
       orientation: "portrait",
       display: "standalone",
-      start_url: ".",
-      background_color: '#ffffff',
+      start_url: "/",
+      theme_color: "#c0ffee",
+      background_color: "#ffffff",
       icons: [
         {
           src: path.resolve('icon.png'),

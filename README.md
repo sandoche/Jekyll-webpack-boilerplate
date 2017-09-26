@@ -55,13 +55,14 @@ The following tools should be installed before starting:
 * Sass
 
 ## Quick start
-1. Clone this repo using `git clone https://github.com/sandoche/Jekyll-webpack-boilerplate.git`
-2. Move to the appropriate directory: `cd Jekyll-webpack-boilerplate`.
-3. Run `yarn install` or `npm install` in order to install dependencies and clean the git repo.
-4. Run `yarn start` or `npm start`  to start the development server.
+1. Make sure you have all the prerequisites above installed.
+2. Clone this repo using `git clone https://github.com/sandoche/Jekyll-webpack-boilerplate.git`
+3. Move to the appropriate directory: `cd Jekyll-webpack-boilerplate`.
+4. Run `yarn install` and `bundler install` in order to install dependencies and clean the git repo.
+5. Run `yarn start` to start the development server.
 
 ## Development
-To start the development server just run  `yarn start` or `npm start`
+To start the development server just run  `yarn start`
 
 ### Folder structure
 ```
@@ -129,8 +130,6 @@ You can see above the basic structure of the boilerplate and the main difference
 
 ## Build
 
-If you don't user `yarn` replace it by `npm run` in the following commands.
-
 ### Optimized website
 To build the website run the following line
 
@@ -167,37 +166,3 @@ yarn clean:project
 
 ## Buy me a beer
 If you like this project [Buy me a beer](https://paypal.me/kanbanote)
-
-## To do
-- [x] Create the home layout
-- [x] Write sass
-- [x] Create the page layout
-- [x] Create the blog layout
-- [x] Create the post layout
-- [x] Create footer
-- [x] Check for markdown
-- [x] See for page and post translations
-- [x] Check with the blog post what is missing
-- [x] Use path resolve in the webpack config
-- [x] Remove images compression from dev webpack
-- [x] Try to put CSS & JS Hash for prod --> JS with hash but not css because of the optim
-- [x] Fix CSS minification
-- [x] Try precss, or node-sass --> Didn't work
-- [x] Check for SASS map --> couldn't make it work
-- [x] Delete assets & site
-- [x] Write default data
-- [x] Test to add images in the pages to check the whole boilerplate
-- [x] Update logo & icon
-- [x] Try AMP
-- [x] Design template
-- [x] Write documentation
-- [x] Try subfolders for images
-- [x] Doorbell script to update because it's in French
-- [x] Fix the empty remove
-- [x] Tell in documentation to change package.json or check how to change it in the favicon plugin
-- [x] Try the boilerplate with a real project (snitco compare after before with Lighthouse)
-- [x] Check manifest and PWA
-- [x] Write the article draft
-- [ ] Try to fix in windows
-- [ ] Try to build Guetzli
-- [ ] Finish the article

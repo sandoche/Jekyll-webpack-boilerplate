@@ -47,6 +47,13 @@ Read more about how this boilerplate has been built: https://medium.com/learning
 * Generation of the Manifest
 * Generation of Service worker
 
+## Prerequisites
+The following tools should be installed before starting:
+* NodeJS, npm, yarn
+* Ruby, Gem, Bundler
+* Jekyll
+* Sass
+
 ## Quick start
 1. Clone this repo using `git clone https://github.com/sandoche/Jekyll-webpack-boilerplate.git`
 2. Move to the appropriate directory: `cd Jekyll-webpack-boilerplate`.

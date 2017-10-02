@@ -47,6 +47,9 @@ Read more about how this boilerplate has been built: https://medium.com/learning
 * Generation of the Manifest
 * Generation of Service worker
 
+**Easy to deploy**
+* Easy deployement with Netlify
+
 ## Prerequisites
 The following tools should be installed before starting:
 * NodeJS, npm, yarn
@@ -155,6 +158,15 @@ This will remove the generated folders
 ```
 yarn clean:project
 ```
+
+## Known issues
+* Jekyll watch doesn't reload / rebuild when a translation file is updated
+* Build in netlify, yarn is not working, here is the workaround, replace `yarn build` by `npm run-script build` and remove `yarn.lock`
+
+## Websites using Jekyll Webpack Boilerplate
+* SConférenicers - https://sconferenciers.com
+* Typster - https://typster.xyz
+* Bico - https://bico.me
 
 ## Other documentations
 * [Jekyll](https://jekyllrb.com/)

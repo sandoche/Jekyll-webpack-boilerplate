@@ -160,8 +160,9 @@ yarn clean:project
 ```
 
 ## Known issues
-* Jekyll watch doesn't reload / rebuild when a translation file is updated
+* Jekyll watch doesn't reload / rebuild when a translation file is updated inside `_i18n` folder, I recommand to remove `jekyll-multiple-languages-plugin` if you don't want a multi language website and if you want to watch / rebuild faster. Otherwise close and start  `yarn start` to rebuild and see your changes from `_i18n`
 * Build in netlify, yarn is not working, here is the workaround, replace `yarn build` by `npm run-script build` and remove `yarn.lock`
+* The critical CSS Path may show some weird behavior when the page is loading, if you want to remove it remove `webpack --env=optim  --progress --profile --colors` in `package.json` `build`, and `build:pwa` scripts.
 
 ## Websites using Jekyll Webpack Boilerplate
 * SConférenicers - https://sconferenciers.com

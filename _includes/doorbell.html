@@ -1,27 +1,10 @@
 <script type="text/javascript">
     window.doorbellOptions = {
-        strings: {
-          'title': 'Feedback',
-          'intro-text': '', // Empty by default
-          'feedback-textarea-placeholder': 'Send us your comments or suggestions...',
-          'feedback-label': '(empty)',
-          'email-input-placeholder': 'Your email address',
-          'email-label': '(empty)',
-          'attach-a-screenshot': 'Attach a screenshot',
-          'submit-button-text': 'Send',
-          'add-attachments-label': '',
-
-          'message-success' : 'Feedback sent!',
-          'message-error-missing-email': 'Your email address is required',
-          'message-error-invalid-email': 'Invalid email address',
-          'message-error-missing-message': 'Your message is required',
-          'message-error-message-too-short': 'Your message is too short'
-        },
         appKey: '{{ site.doorbell }}'
     };
     (function(w, d, t) {
         var hasLoaded = false;
-        function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/6760?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
+        function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/7133?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
         if (w.attachEvent) { w.attachEvent('onload', l); } else if (w.addEventListener) { w.addEventListener('load', l, false); } else { l(); }
         if (d.readyState == 'complete') { l(); }
     }(window, document, 'script'));

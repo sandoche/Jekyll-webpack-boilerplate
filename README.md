@@ -6,7 +6,7 @@
 </h1>
 
 A Jekyll boilerplate supercharged with Webpack to build modern performant websites (including Progressive Web Apps).
-Read more about how this boilerplate has been built: https://medium.com/learning-lab
+Read more about how this boilerplate has been built: https://medium.com/learning-lab/5-how-i-learnt-webpack-3-and-created-a-jekyll-and-webpack-boilerplate-edd86645fd5e
 
 ## Features
 
@@ -61,8 +61,8 @@ The following tools should be installed before starting:
 1. Make sure you have all the prerequisites above installed.
 2. Clone this repo using `git clone https://github.com/sandoche/Jekyll-webpack-boilerplate.git`
 3. Move to the appropriate directory: `cd Jekyll-webpack-boilerplate`.
-4. Run `yarn install` and `bundler install` in order to install dependencies and clean the git repo.
-5. Run `yarn start` to start the development server.
+4. Run `yarn install`  (you can also do `npm install` if you don't have yarn) and `bundler install` in order to install dependencies and clean the git repo.
+5. Run `yarn start` to start the development server (or use `npm start`).
 
 ## Development
 To start the development server just run  `yarn start`

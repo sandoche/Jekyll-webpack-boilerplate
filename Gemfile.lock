@@ -56,7 +56,7 @@ GEM
       css_press
     multi_js (0.1.0)
       uglifier (~> 2)
-    nokogiri (1.8.1)
+    nokogiri (1.8.2)
       mini_portile2 (~> 2.2.0)
     octopress-hooks (2.6.2)
       jekyll (>= 2.0)

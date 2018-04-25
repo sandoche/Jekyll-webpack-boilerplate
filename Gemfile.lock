@@ -6,7 +6,7 @@ GEM
     amp-jekyll (1.0.2)
       fastimage (>= 1.8.0)
       jekyll (~> 3.0)
-      nokogiri (>= 1.6.0)
+      nokogiri (>= 1.8.1)
     colorator (1.1.0)
     css_press (0.3.2)
       csspool-st (= 3.1.2)

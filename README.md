@@ -66,6 +66,7 @@ The following tools should be installed before starting:
 
 ## Quick deployment
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sandoche/Jekyll-webpack-boilerplate)
+Here is a demo of the Netlify build: https://dazzling-swartz-9738b5.netlify.com
 
 ## Development
 To start the development server just run  `npm start`

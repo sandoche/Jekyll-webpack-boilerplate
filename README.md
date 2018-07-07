@@ -52,7 +52,7 @@ Read more about how this boilerplate has been built: https://medium.com/learning
 
 ## Prerequisites
 The following tools should be installed before starting:
-* NodeJS, npm, yarn
+* NodeJS, npm
 * Ruby, Gem, Bundler
 * Jekyll
 * Sass
@@ -61,14 +61,14 @@ The following tools should be installed before starting:
 1. Make sure you have all the prerequisites above installed.
 2. Clone this repo using `git clone https://github.com/sandoche/Jekyll-webpack-boilerplate.git`
 3. Move to the appropriate directory: `cd Jekyll-webpack-boilerplate`.
-4. Run `yarn install`  (you can also do `npm install` if you don't have yarn) and `bundler install` in order to install dependencies and clean the git repo.
-5. Run `yarn start` to start the development server (or use `npm start`).
+4. Run `npm install` and `bundler install` in order to install dependencies and clean the git repo.
+5. Run `npm start` to start the development server (or use `npm start`).
 
 ## Quick deployement
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sandoche/Jekyll-webpack-boilerplate)
 
 ## Development
-To start the development server just run  `yarn start`
+To start the development server just run  `npm start`
 
 ### Folder structure
 ```
@@ -112,8 +112,7 @@ To start the development server just run  `yarn start`
 │   └── template
 │       └── default.html <--- Here is the main default template, feel free to edit it but do not delete it
 ├── webpack.config.js
-├── yarn-error.log
-└── yarn.lock
+└── package-lock.json
 ```
 You can see above the basic structure of the boilerplate and the main differences with the official Jekyll folder structure
 
@@ -140,37 +139,36 @@ You can see above the basic structure of the boilerplate and the main difference
 To build the website run the following line
 
 ```
-yarn build
+npm run build
 
 # or if you want the critical css
-yarn build:optim
+npm run build:optim
 ```
 The built website will be in `_site` folder.
 
 You can also run a local server to test it with this command
 ```
-yarn serve:dist
+npm run serve:dist
 ```
 
 ### PWA
 If you want to build a PWA (including the manifest.json and the service worker) run the following. Please ensure to have configured this file `config/webpack.pwa.js`
 The built website will be in `_site` folder.
 ```
-yarn build:pwa
+npm run build:pwa
 
 # or if you want the critical css
-yarn build:pwa:optim
+npm run build:pwa:optim
 ```
 
 ### Clean assets & \_site folders
 This will remove the generated folders
 ```
-yarn clean:project
+npm run clean:project
 ```
 
 ## Known issues
-* Jekyll watch doesn't reload / rebuild when a translation file is updated inside `_i18n` folder, I recommand to remove `jekyll-multiple-languages-plugin` if you don't want a multi language website and if you want to watch / rebuild faster. Otherwise close and start  `yarn start` to rebuild and see your changes from `_i18n`
-* Build in netlify, yarn is not working, here is the workaround, replace `yarn build` by `npm run-script build` and remove `yarn.lock`
+* Jekyll watch doesn't reload / rebuild when a translation file is updated inside `_i18n` folder, I recommand to remove `jekyll-multiple-languages-plugin` if you don't want a multi language website and if you want to watch / rebuild faster. Otherwise close and start  `npm run start` to rebuild and see your changes from `_i18n`
 * The critical CSS Path may show some weird behavior when the page is loading that is why there are separated npm scripts
 * Jekyll webpack boilerpalte does't work on windows for now
 

@@ -170,7 +170,7 @@ npm run clean:project
 ## Known issues
 * Jekyll watch doesn't reload / rebuild when a translation file is updated inside `_i18n` folder, I recommand to remove `jekyll-multiple-languages-plugin` if you don't want a multi language website and if you want to watch / rebuild faster. Otherwise close and start  `npm run start` to rebuild and see your changes from `_i18n`
 * The critical CSS Path may show some weird behavior when the page is loading that is why there are separated npm scripts
-* Jekyll webpack boilerpalte does't work on windows for now
+* Jekyll webpack boilerpalte does't work on windows for now but there is a Workaround, using [Ubuntu in Windows 10](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot%3aoverviewtab)
 
 ## Websites using Jekyll Webpack Boilerplate
 * Typster - https://typster.xyz

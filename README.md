@@ -64,6 +64,9 @@ The following tools should be installed before starting:
 4. Run `yarn install`  (you can also do `npm install` if you don't have yarn) and `bundler install` in order to install dependencies and clean the git repo.
 5. Run `yarn start` to start the development server (or use `npm start`).
 
+## Quick deployement
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sandoche/Jekyll-webpack-boilerplate)
+
 ## Development
 To start the development server just run  `yarn start`
 
@@ -168,13 +171,14 @@ yarn clean:project
 ## Known issues
 * Jekyll watch doesn't reload / rebuild when a translation file is updated inside `_i18n` folder, I recommand to remove `jekyll-multiple-languages-plugin` if you don't want a multi language website and if you want to watch / rebuild faster. Otherwise close and start  `yarn start` to rebuild and see your changes from `_i18n`
 * Build in netlify, yarn is not working, here is the workaround, replace `yarn build` by `npm run-script build` and remove `yarn.lock`
-* The critical CSS Path may show some weird behavior when the page is loading, if you want to remove it remove `webpack --env=optim  --progress --profile --colors` in `package.json` `build`, and `build:pwa` scripts.
+* The critical CSS Path may show some weird behavior when the page is loading that is why there are separated npm scripts
 * Jekyll webpack boilerpalte does't work on windows for now
 
 ## Websites using Jekyll Webpack Boilerplate
-* SConférenicers - https://sconferenciers.com
 * Typster - https://typster.xyz
-* Bico - https://bico.me
+* TEDxMarseille - https://tedxmarseille.com
+* Motive network - https://motive.network
+* CoinGenerator - https://coingenerator.sh
 
 ## Other documentations
 * [Jekyll](https://jekyllrb.com/)

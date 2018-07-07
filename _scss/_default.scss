@@ -115,6 +115,10 @@ a {
   &__link {
     margin-left: 30px;
     font-size: $font-xs;
+
+    &--active {
+      color: $primary-color;
+    }
   }
 
 }

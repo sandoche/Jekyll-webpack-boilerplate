@@ -18,7 +18,7 @@ Read more about how this boilerplate has been built: https://medium.com/learning
 * SASS Style
 * PostCSS Auto Preffixer
 * CSS minified
-* Critical CSS Path added to the main template
+* Critical CSS Path added to the main template (using the command with optim)
 
 **ES6 & Optimization**
 * ES6 Babel
@@ -138,6 +138,9 @@ To build the website run the following line
 
 ```
 yarn build
+
+# or if you want the critical css
+yarn build:optim
 ```
 The built website will be in `_site` folder.
 
@@ -151,6 +154,9 @@ If you want to build a PWA (including the manifest.json and the service worker) 
 The built website will be in `_site` folder.
 ```
 yarn build:pwa
+
+# or if you want the critical css
+yarn build:pwa:optim
 ```
 
 ### Clean assets & \_site folders

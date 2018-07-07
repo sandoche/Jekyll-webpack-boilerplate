@@ -48,7 +48,7 @@ Read more about how this boilerplate has been built: https://medium.com/learning
 * Generation of Service worker
 
 **Easy to deploy**
-* Easy deployement with Netlify
+* Easy deployment with Netlify
 
 ## Prerequisites
 The following tools should be installed before starting:
@@ -64,7 +64,7 @@ The following tools should be installed before starting:
 4. Run `npm install` and `bundler install` in order to install dependencies and clean the git repo.
 5. Run `npm start` to start the development server (or use `npm start`).
 
-## Quick deployement
+## Quick deployment
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sandoche/Jekyll-webpack-boilerplate)
 
 ## Development

@@ -31,7 +31,10 @@ ampdir: amp
 #webmaster_verifications:
 #  google: verification_code
 #google_analytics: id
-#doorbell: appKey
+#doorbell:
+#  id: doorbell_id
+#  appKey: doorbell_appKey
+
 #cookie_consent: true
 
 ### Build settings

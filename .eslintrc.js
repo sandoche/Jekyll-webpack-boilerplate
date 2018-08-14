@@ -1,3 +1,5 @@
-module.exports = {
-    "extends": "airbnb-base"
+const config = {
+  "extends": "airbnb-base"
 };
+
+module.exports = config;

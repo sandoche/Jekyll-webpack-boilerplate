@@ -1,10 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -16,13 +15,13 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './_src/template/default.html',
-      filename: '../_layouts/default.html'
+      filename: '../_layouts/default.html',
     }),
     new ExtractTextPlugin('[name].css'),
     new CopyWebpackPlugin([{
       from: path.resolve('_images'),
-      to: 'images/'
-    }])
+      to: 'images/',
+    }]),
   ],
   module: {
     rules: [
@@ -32,9 +31,9 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env']
-          }
-        }
+            presets: ['env'],
+          },
+        },
       },
       {
         test: /\.(css|scss)$/,
@@ -46,26 +45,26 @@ module.exports = {
               loader: 'postcss-loader',
               options: {
                 config: {
-                  path: 'config/postcss.config.js'
-                }
-              }
+                  path: 'config/postcss.config.js',
+                },
+              },
             },
-            { loader: 'sass-loader'}
-          ]
-        })
+            { loader: 'sass-loader' },
+          ],
+        }),
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
-          'file-loader'
-        ]
+          'file-loader',
+        ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [
-          'file-loader'
-        ]
-      }
-    ]
-  }
+          'file-loader',
+        ],
+      },
+    ],
+  },
 };

@@ -5,7 +5,8 @@
   Jekyll-webpack-boilerplate
 </h1>
 
-[![Telegram](https://img.shields.io/badge/chat-Telegram-blue.svg)](https://t.me/JekyllWebpack)
+
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) [![Telegram](https://img.shields.io/badge/chat-Telegram-blue.svg)](https://t.me/JekyllWebpack)
 
 
 A Jekyll boilerplate supercharged with Webpack to build modern performant websites (including Progressive Web Apps).

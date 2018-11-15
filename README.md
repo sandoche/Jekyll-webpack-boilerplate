@@ -178,6 +178,8 @@ npm run clean:project
 * The critical CSS Path may show some weird behavior when the page is loading that is why there are separated npm scripts
 
 ## Websites using Jekyll Webpack Boilerplate
+* Learning Lab - https://learn.uno
+* Invitecode.is - http://invitecode.is
 * Typster - https://typster.xyz
 * TEDxMarseille - https://tedxmarseille.com
 * Motive network - https://motive.network

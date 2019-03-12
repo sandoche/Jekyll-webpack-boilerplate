@@ -26,6 +26,7 @@ social:
 
 languages: ["en"]
 ampdir: amp
+netlify_cms: true
 
 ### Google webmaster tools, Google Analytics, Doorbell and Cookie consent uncomment and put the API key
 #webmaster_verifications:

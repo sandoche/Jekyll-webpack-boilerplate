@@ -43,12 +43,6 @@ collections:
               widget: 'object'
               fields:
                 - { label: 'Headline', name: headline, widget: string }
-            - label: 'Call to action button'
-              name: call_to_action
-              widget: 'object'
-              fields:
-                - { label: 'Title', name: title, widget: string }
-                - { label: 'Link', name: link, widget: string }
           - label: 'Footer'
             name: footer
             widget: 'object'

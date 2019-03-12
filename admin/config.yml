@@ -23,15 +23,15 @@ collections:
       - {label: "Categories", name: "categories", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: 'Text'
-    label: 'Settings'
+  - name: 'text'
+    label: 'Text'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
     files:
       - name: 'English'
         label: 'English Text'
-        file: '_i18n/en/en.yml'
+        file: '_i18n/en.yml'
         description: 'Text of the website'
         fields:
           - label: 'Home'

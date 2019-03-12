@@ -51,6 +51,9 @@ Read more about how this boilerplate has been built: https://medium.com/learning
 * Generation of the Manifest
 * Generation of Service worker
 
+**CMS Admin panel**
+* Works with Netlify CMS
+
 **Easy to deploy**
 * Easy deployment with Netlify
 
@@ -72,6 +75,12 @@ The following tools should be installed before starting:
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sandoche/Jekyll-webpack-boilerplate)
 
 Here is a demo of the Netlify build: https://dazzling-swartz-9738b5.netlify.com
+
+### Netlify CMS
+
+It also works with Netlify CMS after enabling  Identity service and Git Gateway: https://www.netlifycms.org/docs/add-to-your-site/#enable-identity-and-git-gateway
+
+See `admin/config.yml` for more customization.
 
 ## Development
 To start the development server just run  `npm start`

@@ -8,10 +8,10 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run-script clean:project && webpack --env=dev --progress --profile --colors && concurrently \"webpack-dev-server --env=dev\" \"bundle exec jekyll serve\"",
-    "build:optim": "npm run-script clean:project && cross-env NODE_ENV=production webpack --env=prod --progress --profile --colors && webpack --env=optim  --progress --profile --colors && cross-env JEKYLL_ENV=production bundle exec jekyll build",
-    "build:pwa:optim": "npm run-script clean:project && cross-env NODE_ENV=production webpack --env=pwa --progress --profile --colors && webpack --env=optim  --progress --profile --colors && cross-env JEKYLL_ENV=pwa bundle exec jekyll build && sw-precache --config=config/sw.config.js --verbose",
-    "build": "npm run-script clean:project && cross-env NODE_ENV=production webpack --env=prod --progress --profile --colors && cross-env JEKYLL_ENV=production bundle exec jekyll build",
-    "build:pwa": "npm run-script clean:project && cross-env NODE_ENV=production webpack --env=pwa --progress --profile --colors && cross-env JEKYLL_ENV=pwa bundle exec jekyll build && sw-precache --config=config/sw.config.js --verbose",
+    "build:optim": "npm run-script clean:project && cross-env NODE_ENV=production webpack --env=prod --progress --profile --colors && webpack --env=optim  --progress --profile --colors && cross-env JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_production.yml",
+    "build:pwa:optim": "npm run-script clean:project && cross-env NODE_ENV=production webpack --env=pwa --progress --profile --colors && webpack --env=optim  --progress --profile --colors && cross-env JEKYLL_ENV=pwa bundle exec jekyll build --config _config.yml,_config_production.yml && sw-precache --config=config/sw.config.js --verbose",
+    "build": "npm run-script clean:project && cross-env NODE_ENV=production webpack --env=prod --progress --profile --colors && cross-env JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_production.yml",
+    "build:pwa": "npm run-script clean:project && cross-env NODE_ENV=production webpack --env=pwa --progress --profile --colors && cross-env JEKYLL_ENV=pwa bundle exec jekyll build --config _config.yml,_config_production.yml && sw-precache --config=config/sw.config.js --verbose",
     "serve:dist": "http-server _site",
     "clean:project": "rimraf ./_site ./assets"
   },

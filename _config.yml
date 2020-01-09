@@ -40,6 +40,7 @@ netlify_cms: true
 
 ### Build settings
 markdown: kramdown
+minify_html: false
 plugins:
   - jekyll-feed
   - jekyll-sitemap

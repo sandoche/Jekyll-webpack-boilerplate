@@ -63,6 +63,7 @@ The following tools should be installed before starting:
 * Ruby, Gem, Bundler
 * Jekyll
 * Sass
+* Distro package build-essential libpng-dev
 
 ## Quick start
 1. Make sure you have all the prerequisites above installed.

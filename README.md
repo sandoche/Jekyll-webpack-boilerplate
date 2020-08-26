@@ -6,8 +6,10 @@
 </h1>
 
 
-![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) [![Telegram](https://img.shields.io/badge/chat-Telegram-blue.svg)](https://t.me/JekyllWebpack)
-
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+[![Telegram](https://img.shields.io/badge/chat-Telegram-blue.svg)](https://t.me/JekyllWebpack)
+[![Medium Badge](https://badgen.net/badge/icon/medium?icon=medium&label)](https://medium.com/@sandoche)
+[![Twitter: sandochee](https://img.shields.io/twitter/follow/sandochee.svg?style=social)](https://twitter.com/sandochee)
 
 A Jekyll boilerplate supercharged with Webpack to build modern performant websites (including Progressive Web Apps).
 Read more about how this boilerplate has been built: https://medium.com/learning-lab/5-how-i-learnt-webpack-3-and-created-a-jekyll-and-webpack-boilerplate-edd86645fd5e

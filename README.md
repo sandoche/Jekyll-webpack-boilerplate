@@ -14,7 +14,7 @@
 A Jekyll boilerplate supercharged with Webpack to build modern performant websites (including Progressive Web Apps).
 Read more about how this boilerplate has been built: https://medium.com/learning-lab/5-how-i-learnt-webpack-3-and-created-a-jekyll-and-webpack-boilerplate-edd86645fd5e
 
-## Features
+## Intresting Features
 
 **Improved workflow**
 * Webpack working along with Jekyll

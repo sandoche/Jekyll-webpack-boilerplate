@@ -188,6 +188,7 @@ npm run clean:project
 ## Known issues
 * Jekyll watch doesn't reload / rebuild when a translation file is updated inside `_i18n` folder, I recommand to remove `jekyll-multiple-languages-plugin` if you don't want a multi language website and if you want to watch / rebuild faster. Otherwise close and start  `npm run start` to rebuild and see your changes from `_i18n`
 * The critical CSS Path may show some weird behavior when the page is loading that is why there are separated npm scripts
+* Wsl2 requires to run `sudo apt install -y build-essential libpng-dev` in order to fix the `pngquant failed to build, make sure that libpng-dev is installed` issue
 
 ## Websites using Jekyll Webpack Boilerplate
 * Learning Lab - https://learn.uno

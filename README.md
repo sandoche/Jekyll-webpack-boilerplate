@@ -24,7 +24,6 @@ Read more about how this boilerplate has been built: https://medium.com/learning
 * SASS Style
 * PostCSS Auto Preffixer
 * CSS minified
-* Critical CSS Path added to the main template (using the command with optim)
 
 **ES6 & Optimization**
 * ES6 Babel
@@ -95,14 +94,13 @@ To start the development server just run  `npm start`
 ├── about.md
 ├── blog.md
 ├── config <--- This folder contains the different Webpack config files
-│   ├── optimization-fix <--- A fix for optimization, do not delete this folder
+│   ├── manifest.json <--- Please edit this file if you want a PWA
 │   ├── postcss.config.js <--- Post css config
 │   ├── sw.config.js <--- The service worker config file
 │   ├── webpack.common.js <--- The common Webpack config file for all the environment
 │   ├── webpack.dev.js <--- Dev Webpack environment config file
-│   ├── webpack.optim.js <--- This is used to add the css critical path in the default template
 │   ├── webpack.prod.js <--- Prod Webpack environment config file
-│   └── webpack.pwa.js <--- Please edit this file if you want a PWA
+│   └── webpack.pwa.js
 ├── _config.yml <--- The Jekyll config file that you need to set up
 ├── Gemfile
 ├── Gemfile.lock
@@ -137,7 +135,7 @@ You can see above the basic structure of the boilerplate and the main difference
 ### Configurations
 * The required configurations are all in `_config.yml`
 * Also edit `package.json` the name is used in the meta tags
-* If you want a `manifest.json` file please edit `config/webpack.pwa.js`
+* If you want a `manifest.json` file please edit `config/manifest.json`
 * Replace the different icon by yours in `_images` and in the root folder
 
 ### Assets
@@ -156,38 +154,31 @@ You can see above the basic structure of the boilerplate and the main difference
 ### Optimized website
 To build the website run the following line
 
-```
+```sh
 npm run build
-
-# or if you want the critical css
-npm run build:optim
 ```
 The built website will be in `_site` folder.
 
 You can also run a local server to test it with this command
-```
+```sh
 npm run serve:dist
 ```
 
 ### PWA
-If you want to build a PWA (including the manifest.json and the service worker) run the following. Please ensure to have configured this file `config/webpack.pwa.js`
+If you want to build a PWA (including the manifest.json and the service worker) run the following. Please ensure to have configured this file `config/manifest.json`
 The built website will be in `_site` folder.
-```
+```sh
 npm run build:pwa
-
-# or if you want the critical css
-npm run build:pwa:optim
 ```
 
 ### Clean assets & \_site folders
 This will remove the generated folders
-```
+```sh
 npm run clean:project
 ```
 
 ## Known issues
 * Jekyll watch doesn't reload / rebuild when a translation file is updated inside `_i18n` folder, I recommand to remove `jekyll-multiple-languages-plugin` if you don't want a multi language website and if you want to watch / rebuild faster. Otherwise close and start  `npm run start` to rebuild and see your changes from `_i18n`
-* The critical CSS Path may show some weird behavior when the page is loading that is why there are separated npm scripts
 * Wsl2 requires to run `sudo apt install -y build-essential libpng-dev` in order to fix the `pngquant failed to build, make sure that libpng-dev is installed` issue
 
 ## Websites using Jekyll Webpack Boilerplate

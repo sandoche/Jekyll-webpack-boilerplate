@@ -1,0 +1,11 @@
+{
+  "name": "Jekyll Webpack Boilerplate",
+  "short_name": "Jekyll Webpack",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "⚡️ A boilerplate with Jekyll and Webpack to make the most performant static websites",
+  "scope": "/",
+  "theme_color": "#efeeff",
+  "background_color": "#efeeff"
+}

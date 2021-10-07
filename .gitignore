@@ -3,9 +3,9 @@ _site
 .jekyll-metadata
 node_modules
 assets
-optimization-fix-this-file-is-ignored.js
 yarn-error.log
 .yarnclean
+.jekyll-cache
 
 # editors
 .idea

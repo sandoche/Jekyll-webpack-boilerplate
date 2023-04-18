@@ -18,7 +18,7 @@
     "@babel/preset-env": "^7.15.6",
     "autoprefixer": "^10.3.6",
     "babel-loader": "^8.2.2",
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.29.1",
     "browser-sync-webpack-plugin": "^2.3.0",
     "clean-webpack-plugin": "^4.0.0",
     "concurrently": "^6.2.2",
